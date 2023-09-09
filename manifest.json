@@ -2,7 +2,7 @@
     "name": "GeostronomIA",
     "short_name": "GeostronomIA",
     "start_url": ".",
-    "display": "fullscreen",
+    "display": "standalone",
     "orientation": "portrait",
     "background_color": "#fff",
     "description": "Crateres lunares",
