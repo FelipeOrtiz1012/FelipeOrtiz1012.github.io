@@ -4,6 +4,7 @@
     <title>Clasificacion de Crateres</title>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
     <script src="main.js"></script>
+    <link rel="manifest" href="manifest.json" />
     <style>
         /* Estilos para centrar contenido */
         body {
@@ -51,6 +52,11 @@
     <p>Resultado: <span id="result"></span></p>
     <img id="preview">
     <p id="loadingMessage"></p>
+    <script>
+        if("serviceWorker" in navigator){
+            navigator.serviceWorker.register("/service-worker.js");
+        }
+    </script>
 </body>
 </html>
 
