@@ -27,7 +27,7 @@ async function classifyImage() {
 
             // Mostrar la etiqueta de clase y la probabilidad en tu página
             const resultElement = document.getElementById('result');
-            resultElement.textContent = `Prediccion: ${predictedClassLabel} (Probabilidad: ${Math.max(...predictions)})`;
+            resultElement.textContent = `Prediccion: ${predictedClassLabel} (Probabilidad: ${(Math.max(...predictions)*100).toFixed(2)}%)`;
         };
         img.src = event.target.result;
 
